@@ -21,6 +21,7 @@ Clone Project (If you have not done so)
 
 ```bash
 git clone https://github.com/thoriqulhaq/FINAL-GG3.git
+cd FINAL-GG3/be
 ```
 
   &nbsp;
