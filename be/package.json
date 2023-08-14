@@ -1,0 +1,27 @@
+{
+  "name": "tokopedia-play-clone-be",
+  "version": "1.0.0",
+  "description": "Tokopedia Play Clone (BE) by Thoriqulhaq Jibril Al Qudsy (GG3FSGP0507)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Thoriqulhaq Jibril Al Qudsy",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^7.0.1",
+    "express-ws": "^5.0.2",
+    "mongoose": "^7.4.0",
+    "mongoose-paginate-v2": "^1.7.31",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.0.1"
+  }
+}

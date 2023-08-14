@@ -1,0 +1,29 @@
+.commentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.commentItem .commentInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.commentItem .commentInfo .commentName {
+  font-weight: bold;
+}
+
+.commentItem .commentInfo .commentDate {
+  font-size: 12px;
+  color: #c7ccd1;
+}
+
+.commentItem .commentContent {
+  font-size: 14px;
+  color: #c7ccd1;
+}
+
+.commentItem .commentContent .commentText {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,544 @@
+{
+	"info": {
+		"_postman_id": "1b2ac0b7-fdcb-4319-aee3-23e7e3b531d4",
+		"name": "Tokopedia Play Clone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16481001"
+	},
+	"item": [
+		{
+			"name": "Video",
+			"item": [
+				{
+					"name": "Get All Video",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/video",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"video"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Video",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/video/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"video",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Video",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Macbook Air 15\"",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"value": "https://i.ytimg.com/vi/0okuAwqTHs0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNKgw53HbJMbdjU5CGWF20nt32EQ",
+									"type": "text"
+								},
+								{
+									"key": "embeddedUrl",
+									"value": "https://www.youtube.com/watch?v=0okuAwqTHs0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/api/v1/video",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"video"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Video",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Apple Macbook Air 15\"",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"value": "https://i.ytimg.com/vi/0okuAwqTHs0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNKgw53HbJMbdjU5CGWF20nt32EQ",
+									"type": "text"
+								},
+								{
+									"key": "embeddedUrl",
+									"value": "https://www.youtube.com/watch?v=0okuAwqTHs0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/api/v1/video/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"video",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Video",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/video/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"video",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/product",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							],
+							"query": [
+								{
+									"key": "videoId",
+									"value": "64c2eca0d7c85826480b7316",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/product/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "videoId",
+									"value": "64c2eca0d7c85826480b7316",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Macbook Air 15\" (M2 Chip)",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20150000",
+									"type": "text"
+								},
+								{
+									"key": "link",
+									"value": "https://www.tokopedia.com/putragroup/apple-macbook-air-m2-chip-2023-15-inch-512gb-256gb-ram-8gb-ibox-8-256gb-inter-space-grey-594e6?extParam=ivf%3Dfalse&src=topads",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/api/v1/product",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "videoId",
+									"value": "64c2eca0d7c85826480b7316",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Macbook Air 15\" (M2 Chip)",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20150000",
+									"type": "text"
+								},
+								{
+									"key": "link",
+									"value": "https://www.tokopedia.com/putragroup/apple-macbook-air-m2-chip-2023-15-inch-512gb-256gb-ram-8gb-ibox-8-256gb-inter-space-grey-594e6?extParam=ivf%3Dfalse&src=topads",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/api/v1/product/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/product/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Get All Comment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/comment",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"comment"
+							],
+							"query": [
+								{
+									"key": "videoId",
+									"value": "64c2eca0d7c85826480b7316",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/comment/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "videoId",
+									"value": "64c2eca0d7c85826480b7316",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Thoriqulhaq Jibril",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Good laptop!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/api/v1/comment",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Comment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "videoId",
+									"value": "64c2eca0d7c85826480b7316",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Thoriqulhaq Jibril",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Good laptop!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/api/v1/comment/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/api/v1/comment/:id",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64c2e93e96303d45fea0cbe6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "http://localhost:4000",
+			"type": "string"
+		}
+	]
+}

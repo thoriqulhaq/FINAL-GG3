@@ -1,0 +1,155 @@
+.layoutStyle {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.emptyState {
+    background-color: #28292E;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingIcon {
+    font-size: 50px;
+    color: #C7CBD1;
+}
+
+.headerStyle {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    height: 100px;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+    line-height: 64px;
+    background-color: #28292E;
+}
+
+.headerStyle > p {
+    margin: auto 0;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.headerLeft > p {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.icon {
+    font-size: 20px;
+    color: #C7CCD1;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.contentStyle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px 75px 50px;
+    color: #fff;
+    background-color: #28292E;
+}
+
+.contentStyle > iframe {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.productSection {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.siderStyle {
+    color: #fff;
+    background-color: #28292E !important;
+    padding: 25px 0 75px 0;
+}
+
+.commentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-left: #4a4b4c 1px solid;
+    padding: 0 30px 0 30px;
+}
+
+.commentList {
+    overflow-y: scroll !important;
+    height: calc(100vh - 430px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.commentForm {
+    margin: 0 20px;
+}
+
+.inputStyle {
+    background-color: #4a4b4c !important;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    ::placeholder {
+        color: #C7CCD1 !important;
+        opacity: 1;
+    }
+}
+
+.inputStyle > input {
+    color: #fff;
+}
+
+.textAreaStyle {
+    height: 100px;
+    background-color: #4a4b4c !important;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    ::placeholder {
+        color: #C7CCD1;
+    }
+}
+
+.textAreaStyle > textarea {
+    height: 100%;
+    resize: none;
+    color: #fff;
+}
+
+.buttonStyle {
+    background-color: #0F0D0F !important;
+    border: none;
+    outline: none;
+    color: #fff !important;
+    cursor: pointer;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

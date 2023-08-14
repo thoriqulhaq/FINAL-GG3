@@ -1,0 +1,31 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 30% !important;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #0E0E0F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    color: #C7CCD1 !important;
+}
+
+.productPrice {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
