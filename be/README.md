@@ -15,12 +15,12 @@ The objective for the mid-term project within Generasi Gigih 3.0 is to craft an 
 &nbsp;
   
 
-Clone Project
+Clone Project (If you have not done so)
 
   
 
 ```bash
-git clone https://github.com/thoriqulhaq/MIDTERM-GG3.git
+git clone https://github.com/thoriqulhaq/FINAL-GG3.git
 ```
 
   &nbsp;

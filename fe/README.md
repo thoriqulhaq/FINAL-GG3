@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# TOKOPEDIA PLAY CLONE (FE)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  
 
-## Available Scripts
+The objective for the mid-term project within Generasi Gigih 3.0 is to craft an interactive live shopping platform. This platform's primary purpose is to facilitate user engagement during live shopping events, providing them with opportunities to explore diverse product offerings and actively participate by sharing comments throughout the live sessions.
 
-In the project directory, you can run:
 
-### `npm start`
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## - Setting Up Project -
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+&nbsp;
+  
 
-### `npm test`
+Clone Project (If you have not done so), preferably set up the backend first.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  
 
-### `npm run build`
+```bash
+git clone https://github.com/thoriqulhaq/FINAL-GG3.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  &nbsp;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Initialize ENV File
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
 
-### `npm run eject`
+```bash
+mv .env.example .env
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  &nbsp;
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+  &nbsp;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
 
-### Analyzing the Bundle Size
+## - Feature - 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+&nbsp;
 
-### Making a Progressive Web App
+The web application consists of two main pages: the home page and the product's video detail page. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- The home page serves as the landing page for the application, displaying a list of product's video that users can view. 
+- The product's video detail page is where the product is displayed, along with the video, product sales link and comments section.
 
-### Advanced Configuration
+All the page development is done using ReactJS, a JavaScript library for building user interfaces. UI Library such as Ant Design is also used to help with the development of the application's user interface. The data is fetched from the backend using Axios, a promise-based HTTP client for the browser and Node.js.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+  
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## - Bonus Feature -
 
-### `npm run build` fails to minify
+  &nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As what already mentioned above, the objective of this project is to craft an interactive live shopping platform. Therefore, the bonus feature that I have implemented is the comments section. This section allows users to share their thoughts and opinions about the product's video that they are currently watching. The comments section is also equipped with a live chat feature, which allows users to see other users' comments in real-time.
+
+This feature developed using Websocket, which is a computer communication protocol that provides full-duplex communication channels over a single TCP connection. By using this protocol, the comments section can be updated in real-time without the need to refresh the page.
