@@ -41,5 +41,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(port, () => {
-    console.log(`Socket.io server listening on port ${port}`);
+    console.log(`Server listening on port ${port}`);
 });
