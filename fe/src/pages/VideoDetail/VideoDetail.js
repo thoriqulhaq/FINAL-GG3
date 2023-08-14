@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { io } from "socket.io-client";
 import styles from './VideoDetail.module.css';
 import { Link, useParams } from "react-router-dom";
 import { Layout, Input, Button } from 'antd';
@@ -7,29 +6,22 @@ import { CloseOutlined, LoadingOutlined } from '@ant-design/icons';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import CommentItem from '../../components/CommentItem/CommentItem';
 import axios from 'axios';
+import useComment from '../../hooks/useComment';
 const { Header, Sider, Content } = Layout;
 const { TextArea } = Input;
 
 function VideoDetail() {
     const bottomRef = useRef(null);
-    const [socket, setSocket] = useState(null);
     const { id } = useParams();
     const [video, setVideo] = useState({});
     const [isLoading, setIsLoading] = useState(false);
     const [listProduct, setListProduct] = useState([]);
-    const [listComment, setListComment] = useState([]);
-    
-    const [newComment, setNewComment] = useState({
-        videoId: id,
-        username: '',
-        message: '',
-    });
+    const { listComment, newComment, setNewComment, submitComment } = useComment(id);
     
     const getVideo = async () => {
         await axios.get(process.env.REACT_APP_API_URL + '/video/' + id)
             .then((response) => {
                 setVideo(response.data.data);
-                console.log(response.data.data);
             })
             .catch((error) => {
                 console.log(error);
@@ -45,23 +37,6 @@ function VideoDetail() {
         })
             .then((response) => {
                 setListProduct(response.data.data.docs);
-                console.log(response.data.data.docs);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }
-    
-    const getComment = async () => {
-        await axios.get(process.env.REACT_APP_API_URL + '/comment', {
-            params: {
-                videoId: id,
-                limit: 1000,
-            }
-        })
-            .then((response) => {
-                setListComment(response.data.data.docs);
-                console.log(response.data.data.docs);
             })
             .catch((error) => {
                 console.log(error);
@@ -78,51 +53,14 @@ function VideoDetail() {
         }
     }
     
-    const submitComment = async () => {
-        await axios.post(process.env.REACT_APP_API_URL + '/comment', newComment)
-            .then((response) => {
-                console.log(response.data.data);
-                setNewComment({
-                    videoId: id,
-                    username: '',
-                    message: '',
-                });
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-            
-        if (socket) {
-            socket.emit('submitComment', newComment);
-        }
-    }
-    
-    useEffect(() => {
-        const newSocket = io(process.env.REACT_APP_WS_URL);
-        setSocket(newSocket);
-
-        return () => {
-            newSocket.disconnect();
-        };
-    }, []);
-    
     useEffect(() => {
         setIsLoading(true);
         getVideo();
         getProduct();
-        getComment();
         setIsLoading(false);
-        
-        if (socket) {
-            socket.on('newComment', () => {
-                getComment();
-            });
-        }
-        
-    }, [socket]);
+    }, []);
     
     useEffect(() => {
-        // 👇️ scroll to bottom every time messages change
         bottomRef.current?.scrollIntoView({behavior: 'smooth'});
       }, [listComment]);
     
