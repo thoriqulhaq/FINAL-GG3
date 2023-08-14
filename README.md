@@ -7,5 +7,5 @@ The objective for the mid-term project within Generasi Gigih 3.0 is to craft an 
 ## LIVE DEMO
 
 Frontend: https://tokopedia-play-clone.thoriqulhaq.com/
-&nbsp;
+<br />
 Backend: https://tokopedia-play-clone-be.thoriqulhaq.com/
