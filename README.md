@@ -8,4 +8,4 @@ The objective for the mid-term project within Generasi Gigih 3.0 is to craft an 
 
 Frontend: https://tokopedia-play-clone.thoriqulhaq.com/
 <br />
-Backend: https://tokopedia-play-clone-be.thoriqulhaq.com/
+Backend: https://tokopedia-play-clone-be.thoriqulhaq.com/api/v1

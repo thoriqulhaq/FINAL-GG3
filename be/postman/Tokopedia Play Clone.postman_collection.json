@@ -47,7 +47,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64c2e93e96303d45fea0cbe6"
+									"value": "64c31557cc7c803ec8eeae2a"
 								}
 							]
 						}
@@ -64,7 +64,7 @@
 							"urlencoded": [
 								{
 									"key": "title",
-									"value": "Macbook Air 15\"",
+									"value": "Macbook Air M1 15\"",
 									"type": "text"
 								},
 								{
@@ -74,7 +74,7 @@
 								},
 								{
 									"key": "embeddedUrl",
-									"value": "https://www.youtube.com/watch?v=0okuAwqTHs0",
+									"value": "https://www.youtube.com/embed/0okuAwqTHs0",
 									"type": "text"
 								}
 							]
@@ -103,7 +103,7 @@
 							"urlencoded": [
 								{
 									"key": "title",
-									"value": "Apple Macbook Air 15\"",
+									"value": "New Apple Macbook!",
 									"type": "text"
 								},
 								{
@@ -113,7 +113,7 @@
 								},
 								{
 									"key": "embeddedUrl",
-									"value": "https://www.youtube.com/watch?v=0okuAwqTHs0",
+									"value": "https://www.youtube.com/embed/0okuAwqTHs0",
 									"type": "text"
 								}
 							]
@@ -132,7 +132,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64c2e93e96303d45fea0cbe6"
+									"value": "64da84692c98e0409d3beb5e"
 								}
 							]
 						}
@@ -176,7 +176,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{API_URL}}/api/v1/product",
+							"raw": "{{API_URL}}/api/v1/product?videoId=64c2eca0d7c85826480b7316",
 							"host": [
 								"{{API_URL}}"
 							],
@@ -188,8 +188,7 @@
 							"query": [
 								{
 									"key": "videoId",
-									"value": "64c2eca0d7c85826480b7316",
-									"disabled": true
+									"value": "64c2eca0d7c85826480b7316"
 								}
 							]
 						}
@@ -215,7 +214,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64c2e93e96303d45fea0cbe6"
+									"value": "64c2f05387a2058198580be8"
 								}
 							]
 						}
@@ -232,22 +231,22 @@
 							"urlencoded": [
 								{
 									"key": "videoId",
-									"value": "64c2eca0d7c85826480b7316",
+									"value": "64da84692c98e0409d3beb5e",
 									"type": "text"
 								},
 								{
 									"key": "name",
-									"value": "Macbook Air 15\" (M2 Chip)",
+									"value": "Apple Macbook Air M2",
 									"type": "text"
 								},
 								{
 									"key": "price",
-									"value": "20150000",
+									"value": "19798900",
 									"type": "text"
 								},
 								{
 									"key": "link",
-									"value": "https://www.tokopedia.com/putragroup/apple-macbook-air-m2-chip-2023-15-inch-512gb-256gb-ram-8gb-ibox-8-256gb-inter-space-grey-594e6?extParam=ivf%3Dfalse&src=topads",
+									"value": "https://www.tokopedia.com/onestopgaming/macbook-air-m2-2023-15-inch-ram-8gb-ssd-256gb-512gb-new-midnight-256gb-it",
 									"type": "text"
 								}
 							]
@@ -410,17 +409,17 @@
 							"urlencoded": [
 								{
 									"key": "videoId",
-									"value": "64c2eca0d7c85826480b7316",
+									"value": "64c31557cc7c803ec8eeae2a",
 									"type": "text"
 								},
 								{
 									"key": "username",
-									"value": "Thoriqulhaq Jibril",
+									"value": "Victoria Putri",
 									"type": "text"
 								},
 								{
 									"key": "message",
-									"value": "Good laptop!",
+									"value": "Would like to buy it on next few days!",
 									"type": "text"
 								}
 							]
@@ -537,7 +536,12 @@
 	"variable": [
 		{
 			"key": "API_URL",
-			"value": "http://localhost:4000",
+			"value": "https://tokopedia-play-clone-be.thoriqulhaq.com",
+			"type": "string"
+		},
+		{
+			"key": "API_LAIN",
+			"value": "https://tokopedia-play-clone-be.thoriqulhaq.com/",
 			"type": "string"
 		}
 	]
